@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMainActivity"
+    android:background="@color/colorPrimary"
+    android:padding="16sp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sda_btn_hotMeals"
+            android:text="Hot Meals"
+            android:padding="3dp"
+            android:background="@color/sda_color_black"
+            android:layout_marginEnd="16sp"
+            android:textColor="@color/sda_color_white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sda_btn_deal_of_day"
+            android:text="Today's Meal"
+            android:padding="3dp"
+            android:textColor="@color/sda_color_white"
+            android:textSize="20sp"
+            android:background="@color/sda_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/sda_btn_user_cart"
+            android:layout_marginStart="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/sda_color_no"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/sda_item_count_number"
+            android:visibility="gone"
+            android:background="@drawable/item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="29dp"
+            />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sda_search"
+        android:textColor="@color/colorPrimary"
+        android:hint="Search Foods"
+        android:focusable="auto"
+        style="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:padding="3dp"
+        android:background="@color/sda_color_white"
+        android:drawableEnd="@drawable/ic_search_black_24dp"
+        android:layout_margin="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sda_rv_orders"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

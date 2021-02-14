@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".OrderedBillActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Total Bill"
+            android:textColor="@color/sda_color_black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sda_rv_ordered_bill"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Bill and Details"
+                android:textColor="@color/sda_color_black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="16sp"
+                app:cardCornerRadius="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10sp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Total Amount will be "
+                            android:textColor="@color/sda_color_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5sp"
+                            />
+                        <TextView
+                            android:id="@+id/sda_txt_total_amount"
+                            android:textStyle="bold"
+                            android:textColor="@color/sda_color_black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Payment Method will"
+                            android:textColor="@color/sda_color_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5sp"
+                            />
+                        <TextView
+                            android:textStyle="bold"
+                            android:text="Cash On Delivery"
+                            android:textColor="@color/sda_color_black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Please Enter Address:"
+                        android:textColor="@color/sda_color_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        />
+                    <EditText
+                        android:id="@+id/sda_txt_order_address"
+                        android:hint="Enter Address Here!"
+                        android:maxLines="7"
+                        android:inputType="textLongMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Enter Your Phone Number:"
+                        android:textColor="@color/sda_color_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/sda_txt_order_phone"
+                        android:hint="Enter your Number Here!"
+                        android:lines="1"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/sda_btn_submit_order_detail"
+                        android:text="Order Now"
+                        android:background="@color/sda_color_black"
+                        android:textColor="@color/sda_color_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

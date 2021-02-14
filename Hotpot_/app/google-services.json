@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1013598549601",
+    "firebase_url": "https://hotpot-e07a9.firebaseio.com",
+    "project_id": "hotpot-e07a9",
+    "storage_bucket": "hotpot-e07a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013598549601:android:fa1aa007b53e5758",
+        "android_client_info": {
+          "package_name": "com.sda.syeddaniyalali.hotpot_"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013598549601-djll64b75h03n3hmpiq9id1pdpmco90m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sda.syeddaniyalali.hotpot_",
+            "certificate_hash": "09900bd7c82619e5563eb35531047dfa77b5de22"
+          }
+        },
+        {
+          "client_id": "1013598549601-26ltpmgl9aspdi902rk1hrecn74snare.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrlCu3bJGKwue5JTa9PT-7AkZukqAyQEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013598549601-26ltpmgl9aspdi902rk1hrecn74snare.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

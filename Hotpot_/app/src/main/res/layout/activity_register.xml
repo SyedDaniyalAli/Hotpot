@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/masala_img"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let's Enjoy The Real Taste of Spices"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:background="@color/sda_color_black"
+                android:textColor="@color/sda_color_white" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration your Account"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@color/sda_color_black"
+                android:textColor="@color/sda_color_white" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/sda_color_no"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/hotpot_icon"
+                    android:layout_width="100sp"
+                    android:layout_gravity="center"
+                    android:layout_height="100sp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_margin="16sp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:background="@color/sda_color_white"
+                    android:src="@drawable/logo_hotpot"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16sp"
+                android:elevation="@dimen/cardview_default_radius"
+                android:padding="26sp"
+                card_view:cardCornerRadius="4dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Your Role"
+                        android:textColor="@color/sda_color_black" />
+
+                    <Spinner
+                        android:id="@+id/sda_reg_select_branch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/sda_array_select_roles_reg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please Enter Your Credentials"
+                        android:textColor="@color/sda_color_black" />
+
+
+                    <EditText
+                        android:id="@+id/sda_reg_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/sda_reg_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/sda_reg_btn_sumbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="@color/sda_color_black"
+                android:text="Register"
+                android:textColor="@color/sda_color_white"
+                android:textSize="20sp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/sda_reg_txt_acc"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an Account?"
+                android:textColor="@color/sda_color_blue_link" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

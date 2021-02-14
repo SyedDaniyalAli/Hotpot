@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/sda_color_no"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="16dp"
+        android:background="@color/sda_color_no"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/sda_user_order_card_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="150sp"
+                                android:src="@drawable/loading" />
+
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sda_user_order_card_food_name"
+                        android:text="Food Name"
+                        android:textSize="15dp"
+                        android:textColor="@color/sda_color_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sda_user_order_card_shop_tile"
+                        android:text="Shop Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/sda_user_order_card_food_price"
+                            android:text="Rs 330"
+                            android:textSize="15dp"
+                            android:textColor="@color/sda_color_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Minimum"
+                            android:layout_marginEnd="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/sda_user_order_card_delivery_price"
+                            android:text="Rs 50"
+                            android:textSize="15dp"
+                            android:textColor="@color/sda_color_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Delivery Fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:text="Rating"
+                        android:textSize="15dp"
+                        android:textColor="@color/sda_color_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3sp"
+                        android:gravity="fill_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RatingBar
+                            android:id="@+id/sda_user_order_card_food_rating"
+                            android:rating="4.6"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator"                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="0dp"
+
+                            />
+
+                        <ImageButton
+                            android:id="@+id/sda_user_order_card_btn_add_to_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/sda_color_no"
+                            android:src="@drawable/ic_add_shopping_cart_black_24dp"
+                            android:text="Add to Cart"
+                            android:textColor="@color/sda_color_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
